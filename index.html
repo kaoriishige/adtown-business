@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIに選ばれなければ、存在しない。 | 株式会社adtown</title>
+  <meta name="description" content="AI検索時代に、Googleビジネスプロフィール運用・AI検索に強いホームページ制作で地域の指名店へ。集客だけでなく求人でも、AIと人の両方に選ばれる口コミ設計を支援。月額4,800円、各業種先着5社、成果報酬の上限は20,000円。" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AIに選ばれなければ、存在しない。 | 株式会社adtown" />
+  <meta property="og:description" content="Googleビジネスプロフィール運用代行×AI検索対応サイト制作で、AIにも人にも選ばれる店舗へ。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "株式会社adtown",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "329-2711",
+      "addressRegion": "栃木県",
+      "addressLocality": "那須塩原市",
+      "streetAddress": "石林698-35"
+    },
+    "description": "Googleビジネスプロフィール運用代行、AI検索に強いホームページ制作・改修支援",
+    "areaServed": "日本"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "本当に成果が出ないと追加費用はかかりませんか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。資料の内容に基づき、基準値を下回った場合の成果報酬は0円です。さらに、報酬上限は20,000円に設定しています。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="株式会社adtown トップへ">
+        <span class="brand-mark">ad</span>
+        <span class="brand-text">株式会社adtown</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">トップ</a>
+        <a class="btn btn-sm btn-primary" href="#entry">モデル店登録（決済へ）</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== ERA SECTION ===== -->
+    <section id="era" class="era section">
+      <div class="container era-inner">
+        <div class="era-badge">THE NEW ERA OF SEARCH</div>
+        <h2 class="era-headline">検索は<span class="era-gradient">「AI＋Googleハイブリッド」</span>の時代</h2>
+      </div>
+    </section>
+
+    <!-- ===== AUTHORITY SECTION ===== -->
+    <section class="authority-section section-sm">
+      <div class="container">
+        <div class="authority-grid glass">
+          <div class="authority-header">
+            <h3>世界を牽引するトップリーダーは、<br>既に「検索の終わり」と「AIの始まり」を断言しています。</h3>
+          </div>
+
+          <div class="ceo-quotes-grid">
+            <div class="ceo-card">
+              <img src="Microsoft%20CEO.png" class="ceo-photo" alt="Satya Nadella Microsoft CEO">
+              <div class="ceo-meta">
+                <strong>Satya Nadella</strong>
+                <span>Microsoft CEO</span>
+              </div>
+              <p class="ceo-quote">「検索の世界は、実に<strong>30年ぶりに“再発明”</strong>された。AIはこれまでの体験を根底から変えてしまうだろう。」</p>
+            </div>
+
+            <div class="ceo-card">
+              <img src="Google%20CEO.jpg" class="ceo-photo" alt="Sundar Pichai Google CEO">
+              <div class="ceo-meta">
+                <strong>Sundar Pichai</strong>
+                <span>Google CEO</span>
+              </div>
+              <p class="ceo-quote">「AIは、人類がこれまでに取り組んできた技術の中で、<strong>火や電気よりも重要</strong>なものだ。検索の在り方も、AIを中心に再定義される。」</p>
+            </div>
+
+            <div class="ceo-card">
+              <img src="NVIDIA%20CEO.jpg" class="ceo-photo" alt="Jensen Huang NVIDIA CEO">
+              <div class="ceo-meta">
+                <strong>Jensen Huang</strong>
+                <span>NVIDIA CEO</span>
+              </div>
+              <p class="ceo-quote">「すべての企業、すべてのビジネスがAIによって再構築される。<strong>AIを使わない者は、取り残される</strong>ことになる。」</p>
+            </div>
+          </div>
+
+          <div class="authority-note">
+            <p>※Google自身も「AI Overviews」として検索体験の完全なAI移行を宣言しており、これからの集客は「検索結果の一覧に並ぶこと」ではなく、<strong>「AIに選ばれる存在になること」</strong>がゴールになります。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">各業種先着5社限定 / 月額4,800円 / 定員到達後は月額9,800円 / 報酬上限20,000円</div>
+          <h1>AIに選ばれなければ、<br><span>存在しない。</span></h1>
+          <p class="lead">
+            これからは集客だけでなく、<strong>求人でも</strong>検索結果に並ぶだけでは足りません。<br>
+            <strong>AIに「この店・この会社がおすすめ」と指名される店舗や企業</strong>だけが、
+            人にもAIにも選ばれ続けます。
+          </p>
+
+          <div class="ai-search-showcase">
+            <p class="ai-search-label">主要AI検索サービス — すべてに選ばれる対策を</p>
+            <div class="ai-search-grid">
+              <div class="ai-search-item">
+                <div class="ai-search-icon google-ai">G</div>
+                <span>Google<br>AIモード</span>
+              </div>
+              <div class="ai-search-item">
+                <div class="ai-search-icon yahoo-ai">Y!</div>
+                <span>Yahoo!<br>AIアシスタント</span>
+              </div>
+              <div class="ai-search-item">
+                <div class="ai-search-icon chatgpt">⬡</div>
+                <span>ChatGPT</span>
+              </div>
+              <div class="ai-search-item">
+                <div class="ai-search-icon gemini">✦</div>
+                <span>Gemini</span>
+              </div>
+              <div class="ai-search-item">
+                <div class="ai-search-icon perplexity">⊕</div>
+                <span>Perplexity</span>
+              </div>
+              <div class="ai-search-item">
+                <div class="ai-search-icon copilot">⊞</div>
+                <span>Microsoft<br>Copilot</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-points">
+            <div class="point-card">
+              <strong>口コミ評価が弱い</strong>
+              <span>→ 集客でも求人でもAIも人も不安で選べない</span>
+            </div>
+            <div class="point-card">
+              <strong>情報が古い・バラバラ</strong>
+              <span>→ AIが正しく推薦できない</span>
+            </div>
+            <div class="point-card">
+              <strong>ホームページや採用情報が弱い</strong>
+              <span>→ 店舗にも会社にも応募・来店が集まりにくい</span>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a href="#entry" class="btn btn-lg btn-primary">今すぐ登録する</a>
+            <a href="#pricing" class="btn btn-lg btn-secondary">料金を見る</a>
+          </div>
+
+          <ul class="trust-inline" aria-label="安心材料">
+            <li>Googleビジネスプロフィール運用代行</li>
+            <li>AI検索に強いホームページ制作・改修</li>
+            <li>集客にも求人にも効く口コミ・信頼設計</li>
+            <li>成果が出ない月の成果報酬は0円</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel glass">
+            <p class="panel-label">検索のルールが変わっています</p>
+            <div class="compare-grid">
+              <div class="compare-card old">
+                <h2>従来型検索</h2>
+                <ul>
+                  <li>一覧で比較される</li>
+                  <li>広告や順位に埋もれる</li>
+                  <li>選ばれるかは運次第</li>
+                </ul>
+              </div>
+              <div class="compare-card new">
+                <h2>AI検索</h2>
+                <ul>
+                  <li>AIが少数を指名</li>
+                  <li>証拠のある店を推薦</li>
+                  <li>選ばれない店は見えない</li>
+                </ul>
+              </div>
+            </div>
+            <div class="metric-strip">
+              <div>
+                <span class="metric-label">初期費用</span>
+                <strong>0円設計</strong>
+              </div>
+              <div>
+                <span class="metric-label">月額</span>
+                <strong>4,800円</strong>
+              </div>
+              <div>
+                <span class="metric-label">成果報酬上限</span>
+                <strong>20,000円</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== PROBLEM SECTION ===== -->
+    <section class="section problem">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-kicker">WHY NOW</span>
+          <h2>AI時代では、<span>「いい店」だけでは足りません。</span></h2>
+          <p>
+            腕が良い、料理が美味しい、サービスが丁寧、働きやすい会社。<br>
+            それでもAIが証拠として認識できなければ、来店でも応募でも推薦されません。
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="info-card glass">
+            <div class="icon">01</div>
+            <h3>Freshness</h3>
+            <p>最新情報がない店は、「今営業しているのか」「今おすすめできるのか」が伝わりません。</p>
+          </article>
+
+          <article class="info-card glass">
+            <div class="icon">02</div>
+            <h3>Proof</h3>
+            <p>口コミ評価やリアルな写真、実際の声が不足すると、「失敗したくない」「ここで働いて大丈夫か」という不安を消せず、集客でも求人でも推薦されにくくなります。</p>
+          </article>
+
+          <article class="info-card glass">
+            <div class="icon">03</div>
+            <h3>Consistency</h3>
+            <p>Googleビジネスプロフィールと公式サイトに矛盾があると、AIは安心して推薦できません。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUTION SECTION ===== -->
+    <section class="section solution">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">SOLUTION</span>
+          <h2>難しい設定も運用も、<span>adtownがまとめて代行</span></h2>
+          <p>オーナー様は日々の写真共有だけ。AI向けの文章作成、投稿、口コミ返信、サイト連携まで対応します。</p>
+        </div>
+
+        <div class="solution-grid">
+          <article class="service-card glass featured">
+            <div class="badge">人気</div>
+            <h3>Googleビジネスプロフィール管理</h3>
+            <p class="price">月額 <strong>4,800円</strong></p>
+            <ul>
+              <li>各業種 先着5社限定</li>
+              <li>5店舗到達後は定価9,800円</li>
+              <li>最新情報・投稿更新</li>
+              <li>口コミ返信の最適化</li>
+              <li>AIが読み取りやすい情報整備</li>
+            </ul>
+          </article>
+
+          <article class="service-card glass">
+            <h3>AI検索に強いホームページ制作</h3>
+            <p class="price">ホームページ未保有なら <strong>無料作成</strong></p>
+            <ul>
+              <li>AI検索を意識した構成</li>
+              <li>Googleビジネスプロフィールと整合</li>
+              <li>店舗の強み・証拠を整理</li>
+              <li>スマホ最適化対応</li>
+            </ul>
+          </article>
+
+          <article class="service-card glass">
+            <h3>既存サイトのAI検索コード提供</h3>
+            <p class="price"><strong>20,000円</strong></p>
+            <ul>
+              <li>既存サイトを活かして対応</li>
+              <li>制作会社へ実装コード提供</li>
+              <li>構造化・導線・文脈を改善</li>
+              <li>ゼロから作り直す必要なし</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING SECTION ===== -->
+    <section id="pricing" class="section pricing">
+      <div class="container pricing-wrap glass">
+        <div class="section-head center">
+          <span class="section-kicker">PRICING RULE</span>
+          <h2>成果報酬の「絶対ルール」：<span>増えた分だけ、納得の課金</span></h2>
+          <p>オーナー様が「損をしない」ことを物理的に証明するために、以下の3つの透明性を約束します。</p>
+        </div>
+
+        <div class="rules-grid">
+          <article class="rule-card">
+            <span class="rule-no">RULE 1</span>
+            <h3>基準値（スタートライン）の明確化</h3>
+            <p>契約前にGoogleビジネスプロフィールの管理画面を一緒に確認し、直近3ヶ月の平均値を「基準」として固定します。</p>
+            <div class="rule-table-wrapper">
+              <table class="rule-table">
+                <thead>
+                  <tr>
+                    <th>指標（公式数値）</th>
+                    <th>報酬単価</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>電話をかける</td>
+                    <td><strong>500円</strong>/件</td>
+                  </tr>
+                  <tr>
+                    <td>ルート検索</td>
+                    <td><strong>300円</strong>/件</td>
+                  </tr>
+                  <tr>
+                    <td>ウェブサイト閲覧</td>
+                    <td><strong>200円</strong>/件</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="rule-card">
+            <span class="rule-no">RULE 2</span>
+            <h3>【公平】増えた分にだけ課金</h3>
+            <p>当月の実数値から「基準」を引き、私たちが介入して増えた分にだけ単価を掛けます。</p>
+            <div class="formula-box">
+              <div class="formula">
+                成果報酬額 = (今月の数値 − 基準値) × 単価
+              </div>
+              <p class="formula-note">※基準を下回る月の成果報酬は<strong>0円</strong>です。</p>
+            </div>
+          </article>
+
+          <article class="rule-card">
+            <span class="rule-no">RULE 3</span>
+            <h3>【安心】月額上限 20,000円</h3>
+            <p>どんなに集客が爆増しても、月々のお支払いは上限で打ち止め。それ以上の成果はすべてオーナー様の利益です。</p>
+            <div class="calc-box mini">
+              <div>
+                <span class="calc-label">月額固定</span>
+                <strong>4,800円</strong>
+              </div>
+              <div class="calc-plus">+</div>
+              <div>
+                <span class="calc-label">成果合計</span>
+                <strong>上限設定</strong>
+              </div>
+              <div class="calc-equals">=</div>
+              <div class="featured-total">
+                <span class="calc-label">最大支払額</span>
+                <strong>20,000円</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="trust-data-box glass">
+          <div class="trust-content">
+            <h3>なぜ「Googleの公式数値」しか使わないのか？</h3>
+            <p>「業者が作ったレポート」は数字を盛ることができます。しかし、Googleビジネスプロフィールの数値は、Googleが計測している嘘のつけない公式データです。オーナー様もご自身のスマホからいつでも確認できます。</p>
+            <ul class="trust-list">
+              <li><strong>改ざん不能：</strong> Googleが提供する実績データに準拠</li>
+              <li><strong>実数ベース：</strong> 表示回数ではなく「電話」「来店」などのアクションを重視</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXAMPLES SECTION ===== -->
+    <section class="section examples">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-kicker">EXAMPLE</span>
+          <h2>請求イメージの具体例</h2>
+          <p>実際にどれくらいのお支払いになるのか、2つのパターンでシミュレーションします。</p>
+        </div>
+
+        <div class="example-grid">
+          <article class="example-card glass">
+            <div class="example-header">
+              <span class="pattern-badge">パターンA</span>
+              <h3>着実に成果が出た場合</h3>
+            </div>
+            <div class="example-body">
+              <div class="comparison-row">
+                <div class="comp-col">
+                  <span class="comp-label">基準</span>
+                  <p>電話 50件 / ルート 80件</p>
+                </div>
+                <div class="comp-arrow">→</div>
+                <div class="comp-col">
+                  <span class="comp-label">当月</span>
+                  <p>電話 70件(<span class="up">+20</span>) / ルート 120件(<span class="up">+40</span>)</p>
+                </div>
+              </div>
+              <div class="example-calc-details">
+                <p>計算：(20件 × 500円) + (40件 × 300円) = 22,000円</p>
+                <div class="final-price">
+                  <span>お支払い：</span>
+                  <strong>一律 20,000円</strong>(税込)
+                </div>
+                <p class="example-note">※上限ルール適用により、本来の合計額より6,800円お得に。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="example-card glass">
+            <div class="example-header">
+              <span class="pattern-badge gray">パターンB</span>
+              <h3>微増、または現状維持の場合</h3>
+            </div>
+            <div class="example-body">
+              <div class="comparison-row">
+                <div class="comp-col">
+                  <span class="comp-label">基準</span>
+                  <p>電話 50件 / ルート 80件</p>
+                </div>
+                <div class="comp-arrow">→</div>
+                <div class="comp-col">
+                  <span class="comp-label">当月</span>
+                  <p>電話 55件(<span class="up">+5</span>) / ルート 85件(<span class="up">+5</span>)</p>
+                </div>
+              </div>
+              <div class="example-calc-details">
+                <p>計算：(5件 × 500円) + (5件 × 300円) = 4,000円</p>
+                <div class="final-price">
+                  <span>お支払い：</span>
+                  <strong>4,800円 + 4,000円 = 8,800円</strong>(税込)
+                </div>
+                <p class="example-note">※成果が出ない月に追加費用は発生しません（基本料のみ）。</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="killing-quote glass">
+          <div class="quote-content">
+            <p class="quote-text">「オーナー、私たちは『魔法』を売っているのではなく、AIを使って『本来来るはずだったお客様』を確実に取り込む作業を代行します。ですから、数字が増えなければお金をいただく資格はないと考えています。<strong>上限2万円で、24時間365日働く最強の集客スタッフを一人雇う</strong>と考えていただけませんか？」</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONDITIONS SECTION ===== -->
+    <section class="section conditions">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-kicker">MODEL PROGRAM</span>
+          <h2>モデル事業への参加条件と<span>ご利用ルール</span></h2>
+          <p>安心してご参加いただくため、特別価格の適用条件と退会時のルールを明確にしています。</p>
+        </div>
+
+        <div class="solution-grid">
+          <article class="service-card glass">
+            <h3>参加条件 1</h3>
+            <p>当社ホームページの事例掲載にご承認いただくことが条件です。</p>
+            <ul>
+              <li>公開するのは承認を得た内容のみ</li>
+              <li>無断で詳細を公開することはありません</li>
+              <li>実績紹介として掲載可否を事前確認します</li>
+            </ul>
+          </article>
+
+          <article class="service-card glass">
+            <h3>参加条件 2</h3>
+            <p>モデル事業の特別価格は、各業種5店舗までです。</p>
+            <ul>
+              <li>特別価格：月額4,800円</li>
+              <li>各業種5店舗到達後は定価9,800円</li>
+              <li>先着枠のため、早い参加ほど有利です</li>
+            </ul>
+          </article>
+
+          <article class="service-card glass">
+            <h3>退会規定（縛りなし）</h3>
+            <p>いつでも退会手続きが可能です。退会後も、積み上げた資産は無駄になりません。</p>
+            <ul>
+              <li>Googleビジネスプロフィールの管理権限を店舗様へ返還（口コミや投稿はそのまま残ります）</li>
+              <li>当社提供ホームページの保守・更新サポート終了（ドメイン等の引き継ぎ応相談）</li>
+              <li>無理な引き止めや解約違約金等は一切ありません</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFITS SECTION ===== -->
+    <section class="section benefits">
+      <div class="container benefits-grid">
+        <div>
+          <div class="section-head">
+            <span class="section-kicker">BENEFIT</span>
+            <h2>今動く店だけが、<span>1年後の優位を取れます。</span></h2>
+            <p>AIは長く、正しく、継続して運営されたデータを高く評価します。だから早く始めるほど有利です。</p>
+          </div>
+          <ul class="benefit-list">
+            <li>先行者としてAIに学習されやすい</li>
+            <li>口コミ・最新情報・写真が集客と求人の資産になる</li>
+            <li>競合が動き出した後も差を保ちやすい</li>
+            <li>人にもAIにも選ばれる状態を作れる</li>
+          </ul>
+        </div>
+
+        <div class="timeline-card glass">
+          <div class="timeline-item now">
+            <span>今、始める店</span>
+            <strong>AIに選ばれるデータが先に蓄積</strong>
+            <p>地域の指名店ポジションを早期確保</p>
+          </div>
+          <div class="timeline-divider"></div>
+          <div class="timeline-item later">
+            <span>1年後に始める店</span>
+            <strong>後発対応で競争が激化</strong>
+            <p>データ蓄積の差を埋めにくい</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPANY SECTION ===== -->
+    <section class="section company">
+      <div class="container company-grid">
+        <div class="section-head">
+          <span class="section-kicker">COMPANY</span>
+          <h2>運営会社</h2>
+          <p>地域の店舗集客を、AI検索時代の基準で再設計するサポートを行います。</p>
+        </div>
+        <div class="company-card glass">
+          <dl>
+            <div>
+              <dt>会社名</dt>
+              <dd>株式会社adtown</dd>
+            </div>
+            <div>
+              <dt>所在地</dt>
+              <dd>〒329-2711 栃木県那須塩原市石林698-35</dd>
+            </div>
+            <div>
+              <dt>提供内容</dt>
+              <dd>Googleビジネスプロフィール管理 / AI検索対応ホームページ制作 / AI検索用コード提供</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="section faq">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-kicker">FAQ</span>
+          <h2>よくある質問</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item glass" open>
+            <summary>成果が出ない月でも追加費用はかかりますか？</summary>
+            <p>かかりません。基準値を下回る月の成果報酬は0円です。さらに、請求上限は20,000円に設定されています。</p>
+          </details>
+
+          <details class="faq-item glass">
+            <summary>なぜ口コミがそんなに重要なのですか？</summary>
+            <p>AIも人も、「この店・この会社を選んで大丈夫か」を口コミや評価、最新情報で判断するからです。来店でも応募でも、安心材料が弱いと選ばれにくくなります。</p>
+          </details>
+
+          <details class="faq-item glass">
+            <summary>ホームページがなくても申し込めますか？</summary>
+            <p>はい。ホームページがない場合は無料作成プランでスタートできます。</p>
+          </details>
+
+          <details class="faq-item glass">
+            <summary>すでにホームページを持っている場合は？</summary>
+            <p>制作会社様へAI検索用のコードを20,000円で提供し、既存サイトを活かした強化が可能です。</p>
+          </details>
+
+          <details class="faq-item glass">
+            <summary>なぜ先着5社限定なのですか？</summary>
+            <p>各業種ごとに運用密度を担保し、結果が出やすいモデル店舗として丁寧に支援するためです。各業種が5店舗に達した後は、月額は定価9,800円となります。</p>
+          </details>
+
+          <details class="faq-item glass">
+            <summary>モデル事業に参加する条件はありますか？</summary>
+            <p>はい。当社ホームページの事例掲載にご承認いただくことが条件です。ただし、公開するのはお客様が承認した内容のみです。</p>
+          </details>
+
+          <details class="faq-item glass">
+            <summary>途中で退会したくなった場合はどうなりますか？</summary>
+            <p>いつでも解約可能で、違約金等もありません。退会後はGoogleビジネスプロフィールの管理権限をオーナー様へお返ししますので、そこまでに蓄積された「口コミ」や「写真・投稿」の資産が消えることはありません。（※当社で無料作成したホームページについては更新・保守サポートが終了となります）</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ENTRY SECTION ===== -->
+    <section id="entry" class="section entry">
+      <div class="container entry-wrap glass">
+        <div class="entry-copy">
+          <span class="section-kicker">ENTRY</span>
+          <h2>今なら、各業種<span>先着5社</span>のモデル店舗枠。</h2>
+          <p>
+            AI時代は、集客も求人も後回しにした店舗・企業から不利になります。<br>
+            今すぐ登録して、あなたの店舗や会社がどれだけAIと人に選ばれやすい状態か確認してください。
+          </p>
+          <ul class="entry-points">
+            <li>現状診断つき</li>
+            <li>ホームページ未保有でもOK</li>
+            <li>先着5社到達後は月額9,800円</li>
+          </ul>
+        </div>
+
+        <form id="lpForm" class="entry-form" novalidate>
+          <div class="form-grid">
+            <label>
+              <span>お名前 <em>必須</em></span>
+              <input type="text" name="name" placeholder="例：山田 太郎" required />
+            </label>
+
+            <label>
+              <span>店舗名 <em>必須</em></span>
+              <input type="text" name="shop" placeholder="例：○○美容室" required />
+            </label>
+
+            <label>
+              <span>メールアドレス <em>必須</em></span>
+              <input type="email" name="email" placeholder="example@domain.com" required />
+            </label>
+
+            <label>
+              <span>電話番号</span>
+              <input type="tel" name="tel" placeholder="090-1234-5678" />
+            </label>
+
+            <label>
+              <span>業種</span>
+              <select name="industry">
+                <option value="">選択してください</option>
+                <option>美容室</option>
+                <option>飲食店</option>
+                <option>整体</option>
+              </select>
+            </label>
+
+            <label>
+              <span>ホームページの有無</span>
+              <select name="website">
+                <option>持っていない</option>
+                <option>持っている</option>
+                <option>わからない</option>
+              </select>
+            </label>
+          </div>
+
+
+          <label class="consent-check">
+            <input type="checkbox" name="consent_case" required />
+            <span>モデル事業の参加条件として、当社ホームページへの事例掲載に承認します。なお、公開するのは私が承認した内容のみであることを確認しました。</span>
+          </label>
+
+          <label class="consent-check">
+            <input type="checkbox" name="consent_withdrawal" required />
+            <span>退会時にはGoogleビジネスプロフィールの管理権限が店舗側へ返還され、蓄積された口コミ等の資産はそのまま残ること、および当社システムでのAI向け運用・保守サポートが終了となることを確認しました。</span>
+          </label>
+
+          <div class="form-note">
+            ※各業種5店舗に達した後のお申し込みは、月額定価9,800円でのご案内となります。<br>
+            ※送信後、内容確認ページ（payment.html）へ移動します。
+          </div>
+
+          <button type="submit" class="btn btn-lg btn-primary btn-block">確認して決済へ進む</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-cta">
+    <a href="#entry" class="btn btn-primary btn-block">今すぐ登録する</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>決済完了 | 株式会社adtown</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="section">
+    <div class="container">
+      <div class="glass success-card">
+        <h1>決済が完了しました</h1>
+        <p>お申し込みありがとうございます。内容確認後、担当よりご連絡いたします。</p>
+        <div class="cta-row">
+          <a href="index.html" class="btn btn-primary">トップへ戻る</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // 保存しておいたお客様情報（入力データ）を取得
+      const leadDataString = localStorage.getItem("adtownLead");
+      if (!leadDataString) return; // 既に送信済み等でデータがなければ終了
+
+      const lead = JSON.parse(leadDataString);
+      
+      // SSGFormの強固なセキュリティを通すため、
+      // プログラム通信（fetch）ではなく「見えないフォーム」を作って直接送信させます。
+      
+      // 1. 隠しiframe（送信後に画面が切り替わらないようにするため）
+      const iframe = document.createElement('iframe');
+      iframe.name = "hidden_iframe";
+      iframe.style.display = "none";
+      document.body.appendChild(iframe);
+
+      // 2. 隠しフォームを生成
+      const form = document.createElement('form');
+      form.action = "https://ssgform.com/s/B8J2WwojVTjF";
+      form.method = "POST";
+      form.target = "hidden_iframe"; // iframe内で送信完了させる
+      form.style.display = "none";
+
+      // データをフォームにセット
+      for (const key in lead) {
+        const input = document.createElement('input');
+        input.type = "hidden";
+        input.name = key;
+        input.value = lead[key];
+        form.appendChild(input);
+      }
+
+      document.body.appendChild(form);
+
+      // いざ送信！（自動返信メール発火）
+      form.submit();
+      console.log("✅ SSGForm宛に確実に送信しました！");
+
+      // 二重送信を防ぐためデータを消去
+      localStorage.removeItem("adtownLead");
+    });
+  </script>
+</body>
+</html>
+

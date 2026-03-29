@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>成果報酬・請求管理画面</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { padding: 40px; background: #060e1c; color: #fff; }
+    h1 { font-size: 24px; margin-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 12px; }
+    .admin-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+    .customer-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; }
+    .customer-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+    .customer-info strong { display: block; font-size: 20px; color: #4da3ff; }
+    .customer-info span { font-size: 13px; color: #90a0c2; }
+    .calc-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+    .calc-row label { display: block; font-size: 13px; color: #b8c3dc; margin-bottom: 8px; }
+    .calc-row input { width: 100%; padding: 12px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-size: 16px; }
+    .calc-result { background: rgba(53,213,255,0.1); padding: 16px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; border: 1px solid rgba(53,213,255,0.2); margin-bottom: 24px; }
+    .calc-result div { display: flex; flex-direction: column; }
+    .calc-result .label { font-size: 12px; color: #87e8ff; margin-bottom: 4px; }
+    .calc-result .price { font-size: 24px; font-weight: 800; color: #fff; }
+    .action-row { display: flex; justify-content: flex-end; }
+    .loading { opacity: 0.5; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <h1>モデル店舗 成果報酬・課金管理パネル</h1>
+  <p style="margin-bottom: 32px; color: #90a0c2;">
+    ※毎月末にGoogleビジネスプロフィールの「基準値を超えたプラスの実績」を入力して決済ボタンを押すだけで、自動でStripe引き落としと明細メールの送信が完了します。
+  </p>
+
+  <div id="customerList" class="admin-grid">
+    <p>お客様データを読み込み中...</p>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

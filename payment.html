@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>決済ページ | 株式会社adtown</title>
+  <meta name="description" content="株式会社adtownのモデル店登録・決済ページです。内容確認後、Stripe決済へ進みます。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="株式会社adtown トップへ">
+        <span class="brand-mark">ad</span>
+        <span class="brand-text">株式会社adtown</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">トップへ戻る</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="payment-page section">
+    <div class="container payment-layout">
+      <section class="payment-main glass">
+        <div class="section-head">
+          <span class="section-kicker">PAYMENT</span>
+          <h1>お申し込み内容の確認</h1>
+          <p>内容をご確認のうえ、決済へ進んでください。</p>
+        </div>
+
+        <div class="review-card">
+          <h2>申込情報</h2>
+          <dl class="review-list" id="reviewList">
+            <div><dt>お名前</dt><dd id="r-name">-</dd></div>
+            <div><dt>店舗名</dt><dd id="r-shop">-</dd></div>
+            <div><dt>メールアドレス</dt><dd id="r-email">-</dd></div>
+            <div><dt>電話番号</dt><dd id="r-tel">-</dd></div>
+            <div><dt>業種</dt><dd id="r-industry">-</dd></div>
+            <div><dt>ホームページの有無</dt><dd id="r-website">-</dd></div>
+          </dl>
+        </div>
+
+        <div class="review-card">
+          <h2>プラン選択</h2>
+
+          <label class="plan-option">
+            <input type="radio" name="plan" value="model_monthly" checked />
+            <div>
+              <strong>モデル店プラン（月額4,800円）</strong>
+              <p>各業種先着5社限定 / Googleビジネスプロフィール運用代行</p>
+            </div>
+            <span class="plan-price">¥4,800 / 月</span>
+          </label>
+
+
+
+          <label class="plan-option">
+            <input type="radio" name="plan" value="ai_code_once" />
+            <div>
+              <strong>AI検索コード提供（単発20,000円）</strong>
+              <p>既存サイト向け / 制作会社へ実装コード提供</p>
+            </div>
+            <span class="plan-price">¥20,000</span>
+          </label>
+        </div>
+
+        <div class="review-card">
+          <h2>重要事項の確認</h2>
+
+          <label class="consent-check">
+            <input type="checkbox" id="consentTerms" />
+            <span>料金、条件、成果報酬ルール、モデル事業条件を確認しました。</span>
+          </label>
+
+          <label class="consent-check">
+            <input type="checkbox" id="consentWithdraw" />
+            <span>退会時にはGoogleビジネスプロフィールの管理権限が店舗側へ返還され、蓄積された口コミ等の資産はそのまま残ること、および当社システムでのAI向け運用・保守サポートが終了となることを確認しました。</span>
+          </label>
+
+          <label class="consent-check">
+            <input type="checkbox" id="consentStripe" />
+            <span>決済はStripeを利用して安全に処理されることを確認しました。</span>
+          </label>
+        </div>
+
+        <div class="payment-actions">
+          <button id="checkoutBtn" class="btn btn-lg btn-primary">Stripeで決済する</button>
+          <a href="index.html#entry" class="btn btn-lg btn-secondary">入力内容を修正する</a>
+        </div>
+
+        <p id="paymentMessage" class="form-message" aria-live="polite"></p>
+      </section>
+
+      <aside class="payment-sidebar glass">
+        <h2>決済内容の要点</h2>
+        <ul class="summary-points">
+          <li>モデル店価格：月額4,800円</li>
+          <li>先着5社終了後：月額9,800円</li>
+          <li>既存サイト向けコード：20,000円</li>
+          <li>成果報酬は基準値超過分のみ</li>
+          <li>成果報酬上限：20,000円</li>
+        </ul>
+
+        <div class="summary-box">
+          <h3>成果報酬の指標</h3>
+          <ul>
+            <li>電話：500円 / 件</li>
+            <li>ルート検索：300円 / 件</li>
+            <li>ウェブサイト閲覧：200円 / 件</li>
+          </ul>
+        </div>
+
+        <div class="summary-box">
+          <h3>ご注意</h3>
+          <p>
+            実際の本番運用では、Stripeダッシュボードで作成した
+            Price ID を server.js に設定してください。
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="payment.js"></script>
+</body>
+</html>
