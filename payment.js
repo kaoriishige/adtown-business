@@ -38,7 +38,7 @@ checkoutBtn?.addEventListener("click", async () => {
   paymentMessage.style.color = "#9fd3ff";
 
   try {
-    const response = await fetch("http://localhost:3000/create-checkout-session", {
+    const response = await fetch("https://adtown-business.onrender.com/create-checkout-session", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
