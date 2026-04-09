@@ -19,6 +19,7 @@ setText("r-message", lead.message);
 checkoutBtn?.addEventListener("click", async () => {
   const consentTerms = document.getElementById("consentTerms")?.checked;
   const consentWithdraw = document.getElementById("consentWithdraw")?.checked;
+  const consentLegal = document.getElementById("consentLegal")?.checked;
   const consentStripe = document.getElementById("consentStripe")?.checked;
   const selectedPlan = document.querySelector('input[name="plan"]:checked')?.value;
   const addons = Array.from(document.querySelectorAll('input[name="addon"]:checked')).map(el => el.value);
@@ -29,8 +30,8 @@ checkoutBtn?.addEventListener("click", async () => {
     return;
   }
 
-  if (!consentTerms || !consentWithdraw || !consentStripe) {
-    paymentMessage.textContent = "決済前にすべての確認項目へ同意してください。";
+  if (!consentTerms || !consentWithdraw || !consentLegal || !consentStripe) {
+    paymentMessage.textContent = "決済前に、契約書およびすべての確認項目へ同意してください。";
     paymentMessage.style.color = "#ff6b6b";
     return;
   }

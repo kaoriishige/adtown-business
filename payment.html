@@ -84,7 +84,12 @@
 
           <label class="consent-check">
             <input type="checkbox" id="consentWithdraw" />
-            <span>成果を出すための「最低3ヶ月のご契約」に同意します。また、退会時にはGoogleビジネスプロフィールの管理権限が返還され、蓄積された口コミ等の資産はそのまま残ることを確認しました。</span>
+            <span>成果を出すための「最低3ヶ月のご契約（<a href="contract.html" target="_blank" style="color: var(--primary); text-decoration: underline;">契約書を確認・ダウンロード</a>）」に同意します。また、退会時にはGoogleビジネスプロフィールの管理権限が返還され、蓄積された口コミ等の資産はそのまま残ることを確認しました。</span>
+          </label>
+
+          <label class="consent-check">
+            <input type="checkbox" id="consentLegal" />
+            <span><a href="tokusho.html" target="_blank" style="color: var(--primary); text-decoration: underline;">特定商取引法に基づく表記</a>、プライバシーポリシー、利用規約に同意しました。</span>
           </label>
 
           <label class="consent-check">
@@ -94,7 +99,7 @@
         </div>
 
         <div class="payment-actions">
-          <button id="checkoutBtn" class="btn btn-lg btn-primary">Stripeで決済する</button>
+          <button id="checkoutBtn" class="btn btn-lg btn-primary">契約書に同意してStripeで決済する</button>
           <a href="index.html#entry" class="btn btn-lg btn-secondary">入力内容を修正する</a>
         </div>
 
