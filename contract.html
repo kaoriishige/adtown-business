@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>業務委託契約書 | 株式会社adtown</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contract-container { max-width: 800px; margin: 60px auto; padding: 40px; background: #fff; color: #333; line-height: 1.8; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    .contract-header { text-align: center; margin-bottom: 40px; border-bottom: 2px solid #333; padding-bottom: 20px; }
+    .contract-body h3 { margin-top: 30px; border-left: 4px solid var(--primary); padding-left: 10px; font-size: 1.2em; color: #111; }
+    .action-bar { position: sticky; top: 0; background: rgba(6, 14, 28, 0.9); padding: 15px; text-align: center; backdrop-filter: blur(10px); z-index: 100; }
+    @media print { .action-bar { display: none; } .contract-container { box-shadow: none; margin: 0; padding: 0; } }
+  </style>
+</head>
+<body style="background: #f4f7f9;">
+  <div class="action-bar">
+    <button onclick="window.print()" class="btn btn-primary">PDFとして保存・印刷する</button>
+    <a href="index.html" class="btn btn-secondary" style="margin-left:10px;">サイトに戻る</a>
+  </div>
+
+  <div class="contract-container">
+    <div class="contract-header">
+      <h1>業務委託契約書（重要事項）</h1>
+      <p>株式会社adtown（以下「甲」）と、申込者（以下「乙」）は、以下の通り契約を締結します。</p>
+    </div>
+
+    <div class="contract-body">
+      <h3>第1条（目的）</h3>
+      <p>甲は乙に対し、AI検索最適化（Googleビジネスプロフィール運用、ホームページ管理、Instagram設計アドバイス等）を目的とした集客支援サービスを提供し、乙はこれに誠実協力するものとします。</p>
+
+      <h3>第2条（契約期間）</h3>
+      <p>本契約の期間は最低3ヶ月間とし、乙は成果を出すための準備期間としてこれに同意するものとします。3ヶ月経過後は月単位での自動更新とし、退会希望月の前月末日までに申し出ることでいつでも解約可能です。</p>
+
+      <h3>第3条（費用と支払い）</h3>
+      <p>乙は甲に対し、以下の費用を支払うものとします。<br>
+      ① 月額基本料金：9,800円（税込）<br>
+      ② 成果報酬額：当月の実績値（電話・ルート・閲覧）から基準値を引いた増加分に対し、所定の単価を乗じた金額（月額上限30,000円）<br>
+      ③ ホームページ改修・コード提供費用（該当者のみ）：別途合意した金額</p>
+
+      <h3>第4条（機密保持）</h3>
+      <p>双方は、本業務を通じて知り得た相手方の営業秘密を第三者に漏洩してはならないものとします。</p>
+
+      <h3>第5条（データの所有）</h3>
+      <p>契約期間中に蓄積されたGoogleビジネスプロフィールの口コミや投稿データ等の資産は乙に帰属し、退会後も乙がそのまま利用できるものとします。</p>
+
+      <div style="margin-top: 60px; border-top: 1px solid #eee; padding-top: 20px;">
+        <p>運営会社：株式会社adtown<br>所在地：〒329-2711 栃木県那須塩原市石林698-35</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
