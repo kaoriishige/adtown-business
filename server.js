@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const Stripe = require("stripe");
 
 const app = express();
@@ -8,6 +9,7 @@ const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname)));
 
 const DOMAIN = process.env.DOMAIN || "http://localhost:3000";
 
