@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const btnCharge = document.getElementById(`btn-${index}`);
       const msgText = document.getElementById(`msg-${index}`);
 
-      const MAX_REWARD = 20000 - 4800; // 全体上限2万 - 基本月額4800 = 成果報酬部分の上限は15,200円
+      const MAX_REWARD = 30000 - 9800; // 全体上限3万 - 基本月額9800 = 成果報酬部分の上限は20,200円
 
       function calculateReward() {
         const calls = parseInt(inputCalls.value) || 0;
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         let rawTotal = (calls * 500) + (routes * 300) + (visits * 200);
         
-        // 上限15,200円で頭打ちパース
+        // 上限20,200円で頭打ち
         let finalTotal = rawTotal > MAX_REWARD ? MAX_REWARD : rawTotal;
 
         elTotal.textContent = `¥${finalTotal.toLocaleString()}`;

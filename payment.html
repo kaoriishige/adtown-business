@@ -37,7 +37,7 @@
           <h2>申込情報</h2>
           <dl class="review-list" id="reviewList">
             <div><dt>お名前</dt><dd id="r-name">-</dd></div>
-            <div><dt>店舗名</dt><dd id="r-shop">-</dd></div>
+            <div><dt>店舗名・企業名</dt><dd id="r-shop">-</dd></div>
             <div><dt>メールアドレス</dt><dd id="r-email">-</dd></div>
             <div><dt>電話番号</dt><dd id="r-tel">-</dd></div>
             <div><dt>業種</dt><dd id="r-industry">-</dd></div>
@@ -47,23 +47,28 @@
 
         <div class="review-card">
           <h2>プラン選択</h2>
+          <div class="plan-selection-box">
+            <label class="plan-option active">
+              <input type="radio" name="plan" value="model_monthly" checked />
+              <div>
+                <strong>モデル企業プラン（基本料月額9,800円）</strong>
+                <p>各業種先着5社限定 / GBP運用・サイト管理・Instagram設計</p>
+              </div>
+              <span class="plan-price">¥9,800 / 月</span>
+            </label>
+          </div>
+        </div>
 
-          <label class="plan-option">
-            <input type="radio" name="plan" value="model_monthly" checked />
+        <div class="review-card">
+          <h2>既存サイトをお持ちの方（オプション）</h2>
+          <p style="font-size: 0.9em; color: var(--text-muted); margin-bottom: 12px;">
+            すでにホームページをお持ちで、そのサイトをAI検索対応させるためのコード提供を希望される場合は、以下にチェックを入れてください。
+          </p>
+          <label class="plan-option addon-option">
+            <input type="checkbox" id="addon_ai_code" name="addon" value="addon_20000" />
             <div>
-              <strong>モデル店プラン（月額4,800円）</strong>
-              <p>各業種先着5社限定 / Googleビジネスプロフィール運用代行</p>
-            </div>
-            <span class="plan-price">¥4,800 / 月</span>
-          </label>
-
-
-
-          <label class="plan-option">
-            <input type="radio" name="plan" value="ai_code_once" />
-            <div>
-              <strong>AI検索コード提供（単発20,000円）</strong>
-              <p>既存サイト向け / 制作会社へ実装コード提供</p>
+              <strong>AI検索対応コード提供（別途20,000円）</strong>
+              <p>制作会社へ渡せる実装コードを一式提供します。</p>
             </div>
             <span class="plan-price">¥20,000</span>
           </label>
@@ -79,7 +84,7 @@
 
           <label class="consent-check">
             <input type="checkbox" id="consentWithdraw" />
-            <span>退会時にはGoogleビジネスプロフィールの管理権限が店舗側へ返還され、蓄積された口コミ等の資産はそのまま残ること、および当社システムでのAI向け運用・保守サポートが終了となることを確認しました。</span>
+            <span>成果を出すための「最低3ヶ月のご契約」に同意します。また、退会時にはGoogleビジネスプロフィールの管理権限が返還され、蓄積された口コミ等の資産はそのまま残ることを確認しました。</span>
           </label>
 
           <label class="consent-check">
@@ -99,11 +104,12 @@
       <aside class="payment-sidebar glass">
         <h2>決済内容の要点</h2>
         <ul class="summary-points">
-          <li>モデル店価格：月額4,800円</li>
+          <li>モデル企業価格：基本料月額9,800円</li>
           <li>先着5社終了後：月額9,800円</li>
           <li>既存サイト向けコード：20,000円</li>
           <li>成果報酬は基準値超過分のみ</li>
-          <li>成果報酬上限：20,000円</li>
+          <li>成果報酬上限：30,000円</li>
+          <li style="color:#ff8a5b;font-weight:bold;">最低契約期間：3ヶ月</li>
         </ul>
 
         <div class="summary-box">
@@ -113,6 +119,14 @@
             <li>ルート検索：300円 / 件</li>
             <li>ウェブサイト閲覧：200円 / 件</li>
           </ul>
+        </div>
+
+        <div class="summary-box">
+          <h3>ホームページ制作について</h3>
+          <p>
+            ※無料制作の場合は、データをすべて準備することが条件です。<br>
+            ※制作データが準備できない場合は、制作費30,000円〜50,000円の費用がかかります。
+          </p>
         </div>
 
         <div class="summary-box">

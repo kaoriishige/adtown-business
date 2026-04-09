@@ -21,6 +21,7 @@ checkoutBtn?.addEventListener("click", async () => {
   const consentWithdraw = document.getElementById("consentWithdraw")?.checked;
   const consentStripe = document.getElementById("consentStripe")?.checked;
   const selectedPlan = document.querySelector('input[name="plan"]:checked')?.value;
+  const addons = Array.from(document.querySelectorAll('input[name="addon"]:checked')).map(el => el.value);
 
   if (!lead.name || !lead.shop || !lead.email) {
     paymentMessage.textContent = "申込情報が見つかりません。LPから再入力してください。";
@@ -45,6 +46,7 @@ checkoutBtn?.addEventListener("click", async () => {
       },
       body: JSON.stringify({
         plan: selectedPlan,
+        addons: addons,
         customer: lead
       })
     });

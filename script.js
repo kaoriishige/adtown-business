@@ -1,5 +1,7 @@
 const lpForm = document.getElementById("lpForm");
 const formMessage = document.getElementById("formMessage");
+const industrySelect = document.getElementById("industrySelect");
+
 
 if (lpForm) {
   lpForm.addEventListener("submit", function (e) {
@@ -11,7 +13,7 @@ if (lpForm) {
       shop: formData.get("shop") || "",
       email: formData.get("email") || "",
       tel: formData.get("tel") || "",
-      industry: formData.get("industry") || "",
+      industry: formData.get("industry_select"),
       website: formData.get("website") || "",
       message: formData.get("message") || "",
       consent_case: formData.get("consent_case") ? "yes" : "no",

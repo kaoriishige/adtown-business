@@ -1,0 +1,231 @@
+/* ==============================
+   diagnosis.css
+   無料診断ページ固有のスタイル
+   ※ベースはstyles.cssを読み込み済み
+   ============================== */
+
+/* Hero alert box */
+.diag-alert-box {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 20px 22px;
+  border-left: 4px solid #ff5d5d;
+  border-radius: 16px;
+  background: rgba(255, 93, 93, 0.08);
+  color: #ffe9e9;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* CTA row - reuse from styles.css where possible */
+.cta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+/* Mini list in hero panel */
+.diag-mini-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.diag-mini-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #dce7fd;
+  font-size: 14px;
+}
+
+.diag-mini-item b {
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.diag-mini-item span {
+  color: #90a0c2;
+  text-align: right;
+}
+
+/* Note box */
+.diag-note-box {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(53, 213, 255, 0.06);
+  border: 1px solid rgba(53, 213, 255, 0.15);
+  color: #e8f8ff;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Compare wrap */
+.diag-compare-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+/* Crisis grid (4 columns) */
+.diag-crisis-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Diagnosis layout (2 columns) */
+.diag-layout {
+  padding: 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Checklist items */
+.diag-checklist {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.diag-check-item {
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #dce7fd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.diag-check-item strong {
+  color: #35d5ff;
+}
+
+/* Steps */
+.diag-steps {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.diag-step-item {
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.diag-step-item .rule-no {
+  margin-bottom: 8px;
+}
+
+/* Source links list */
+.diag-sources {
+  margin-top: 32px;
+  display: grid;
+  gap: 8px;
+}
+
+.diag-sources strong {
+  margin-bottom: 6px;
+  display: block;
+  font-size: 15px;
+}
+
+.diag-sources a {
+  color: #35d5ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 13px;
+  word-break: break-word;
+  transition: color 0.2s;
+}
+
+.diag-sources a:hover {
+  color: #87e8ff;
+}
+
+/* Authority source link in CEO cards */
+.diag-source-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #35d5ff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.diag-source-link:hover {
+  color: #87e8ff;
+}
+
+/* Video embed */
+.diag-video-embed {
+  margin-top: 32px;
+}
+
+.diag-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.diag-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Form message */
+.form-message {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* textarea for diagnosis form */
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1080px) {
+  .diag-compare-wrap,
+  .diag-layout {
+    grid-template-columns: 1fr;
+  }
+  .diag-crisis-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diag-layout {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .diag-crisis-grid {
+    grid-template-columns: 1fr;
+  }
+  .diag-layout {
+    padding: 22px;
+  }
+}
