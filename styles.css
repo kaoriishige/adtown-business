@@ -227,6 +227,18 @@ h3{font-size:clamp(1.2rem,2vw,1.6rem);line-height:1.4;margin-bottom:12px;font-we
 .service-card li::marker{color:#4da3ff;}
 .service-note{margin-top:20px;font-size:13px;color:#90a0c2;line-height:1.6;border-top:1px solid rgba(255,255,255,0.1);padding-top:16px;}
 
+.service-caution {
+  font-size: 14px;
+  color: #ff8a5b;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  background: rgba(255, 138, 91, 0.08);
+  padding: 16px;
+  border-radius: 12px;
+  border-left: 4px solid #ff8a5b;
+}
+
 
 /* Market Contrast Banner */
 .market-contrast {

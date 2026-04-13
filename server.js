@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname)));
 const DOMAIN = process.env.DOMAIN || "http://localhost:3000";
 
 const PRICE_MAP = {
-  model_monthly: process.env.STRIPE_PRICE_MODEL_MONTHLY, // 9,800円
+  model_monthly: process.env.STRIPE_PRICE_MODEL_MONTHLY, // 5,500円 / 9,900円
   ai_code_once: process.env.STRIPE_PRICE_AI_CODE_ONCE    // 20,000円
 };
 
@@ -23,7 +23,7 @@ app.post("/create-checkout-session", async (req, res) => {
     const { addons, customer } = req.body;
     console.log("受信データ:", { addons, customer }); // ログを出して何が届いているか確認
 
-    // ① 基本料 9,800円
+    // ① 基本料 5,500円 / 9,900円
     const line_items = [{
       price: PRICE_MAP.model_monthly,
       quantity: 1
